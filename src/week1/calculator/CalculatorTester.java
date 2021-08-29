@@ -1,4 +1,4 @@
-package calculator;
+package week1.calculator;
 
 
 public class CalculatorTester extends Calculator {

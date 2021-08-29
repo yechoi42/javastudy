@@ -1,4 +1,4 @@
-package student;
+package week1.student;
 
 public class Student {
     private int studentNumber = 0;

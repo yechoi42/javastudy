@@ -1,4 +1,4 @@
-package calculator;
+package week1.calculator;
 
 public class Calculator {
     protected int num1 = 0;

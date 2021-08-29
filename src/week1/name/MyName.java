@@ -1,4 +1,4 @@
-package name;
+package week1.name;
 
 public class MyName {
     private String name;

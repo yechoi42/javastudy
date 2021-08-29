@@ -1,4 +1,4 @@
-package human;
+package week1.human;
 
 public class Human {
     private String name;
