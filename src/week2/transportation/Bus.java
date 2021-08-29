@@ -13,7 +13,7 @@ public class Bus {
         this.income+=income;
         count++;
     }
-    public void busInfo()
+    public void showBusInfo()
     {
         System.out.println(bus_number+"번 버스의 승객의 수는 "+count+"이고, 수입은 "+income+"입니다.");
     }

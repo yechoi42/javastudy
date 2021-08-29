@@ -13,7 +13,7 @@ public class Subway{
         this.income+=income;
         count++;
     }
-    public void subwayInfo()
+    public void showSubwayInfo()
     {
         System.out.println(subway_number+"번 지하철의 승객의 수는 "+count+"이고, 수입은 "+income+"입니다.");
     }

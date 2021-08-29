@@ -26,9 +26,9 @@ public class TakeTransTest {
         studentT.showInfo();
 
         System.out.println("=== 이용 금액 ===");
-        coffee1.coffeeInfo();
-        coffee2.coffeeInfo();
-        bus100.busInfo();
-        subwayGreen.subwayInfo();
+        coffee1.showCoffeeInfo();
+        coffee2.showCoffeeInfo();
+        bus100.showBusInfo();
+        subwayGreen.showSubwayInfo();
     }
 }
