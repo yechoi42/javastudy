@@ -9,3 +9,4 @@ public class CompanyTest {
         System.out.println(myCompany1 == myCompany2);
     }
 }
+
