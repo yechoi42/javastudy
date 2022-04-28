@@ -21,4 +21,9 @@ public class Customer {
     public String showCustomerInfo() {
         return this.name + "의 등급은 " + this.level + "이며, 보너스 포인트는 " + Integer.toString(this.point) +"입니다.";
     }
+
+    public int calcPrice(int price) {
+        this.point += price * 0.01;
+        return price;
+    }
 }

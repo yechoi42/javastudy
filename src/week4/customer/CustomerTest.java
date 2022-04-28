@@ -9,5 +9,16 @@ public class CustomerTest {
         VIPCustomer customerKim = new VIPCustomer(10020, "김유신");
         customerKim.point = 10000;
         System.out.println(customerKim.showCustomerInfo());
+
+        int priceLee = customerLee.calcPrice(10000);
+        int priceKim = customerKim.calcPrice(10000);
+
+        System.out.println(customerLee.showCustomerInfo() + " 지불금액은 " + priceLee + "원 입니다.");
+        System.out.println(customerKim.showCustomerInfo() + " 지불금액은 " + priceKim + "원 입니다.");
+
+        Customer customerNo = new VIPCustomer(10030, "나몰라");
+        customerNo.point = 10000;
+        int priceNo = customerNo.calcPrice(10000);
+        System.out.println(customerNo.showCustomerInfo() + " 지불금액은 " + priceNo + "원 입니다.");
     }
 }

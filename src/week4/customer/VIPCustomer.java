@@ -17,4 +17,8 @@ public class VIPCustomer extends Customer{
         this.level = "VIP";
     }
 
+    public int calcPrice(int price) {
+        this.point += price * 0.05;
+        return ((int)(price * 0.9));
+    }
 }
