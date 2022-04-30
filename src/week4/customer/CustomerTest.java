@@ -10,15 +10,16 @@ public class CustomerTest {
         customerKim.point = 10000;
         System.out.println(customerKim.showCustomerInfo());
 
+        GoldCustomer customerPark = new GoldCustomer(10030, "박혁거세");
+        customerPark.point = 10000;
+        System.out.println(customerPark.showCustomerInfo());
+
         int priceLee = customerLee.calcPrice(10000);
         int priceKim = customerKim.calcPrice(10000);
+        int pricePark = customerPark.calcPrice(10000);
 
         System.out.println(customerLee.showCustomerInfo() + " 지불금액은 " + priceLee + "원 입니다.");
         System.out.println(customerKim.showCustomerInfo() + " 지불금액은 " + priceKim + "원 입니다.");
-
-        Customer customerNo = new VIPCustomer(10030, "나몰라");
-        customerNo.point = 10000;
-        int priceNo = customerNo.calcPrice(10000);
-        System.out.println(customerNo.showCustomerInfo() + " 지불금액은 " + priceNo + "원 입니다.");
+        System.out.println(customerPark.showCustomerInfo() + " 지불금액은 " + pricePark + "원 입니다.");
     }
 }
