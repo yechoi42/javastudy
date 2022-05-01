@@ -10,6 +10,9 @@ public class Customer {
     protected int id;
     protected String name;
     protected String level;
+    protected double saveRate = 0.01;
+
+    protected double discountRate = 0;
     public int point;
 
     public Customer(int id, String name) {
@@ -23,7 +26,10 @@ public class Customer {
     }
 
     public int calcPrice(int price) {
-        this.point += price * 0.01;
-        return price;
+        int bonusPoint = (int)(price * this.saveRate);
+        int realPrice = (int)(price * (1 - this.discountRate));
+        this.point += bonusPoint;
+        System.out.printf("%s 님이 %d을 지불하셨습니다.\n%s 님의 현재 보너스 포인트는 %d입니다.\n", this.name, realPrice, this.name,this.point);
+        return realPrice;
     }
 }

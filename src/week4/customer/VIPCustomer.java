@@ -15,10 +15,7 @@ public class VIPCustomer extends Customer{
     public VIPCustomer(int id, String name) {
         super(id, name);
         this.level = "VIP";
-    }
-
-    public int calcPrice(int price) {
-        this.point += price * 0.05;
-        return ((int)(price * 0.9));
+        this.saveRate = 0.05;
+        this.discountRate = 0.1;
     }
 }
