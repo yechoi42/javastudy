@@ -20,8 +20,25 @@ public class AnimalTest {
         for(Animal animal : animalList) {
             animal.move();
         }
+
+        test.testDownCasting(animalList);
     }
     public void moveAnimal(Animal animal) {
         animal.move();
+    }
+
+    /*
+    다운캐스팅은 업캐스팅되어 고유의 특성을 잃은 자식 클래스의 객체를 다시 복구시키는것
+     */
+    public void testDownCasting(ArrayList<Animal> animalList) {
+        for (Animal animal: animalList) {
+            if (animal instanceof Human) {
+                ((Human)animal).readBook();
+            } else if (animal instanceof Tiger) {
+                ((Tiger)animal).hunt();
+            } else if (animal instanceof Eagle) {
+                ((Eagle)animal).fly();
+            }
+        }
     }
 }
